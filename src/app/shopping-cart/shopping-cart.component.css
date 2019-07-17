@@ -1,0 +1,14 @@
+.thumbnail{
+    width : 80px;
+    height : 80px;
+    border-radius : 100%;
+    background-size : cover;
+}
+.middle{
+   padding : 35px;
+}
+
+.right{
+    padding-right: 35px;
+    padding-left : 35px;
+}

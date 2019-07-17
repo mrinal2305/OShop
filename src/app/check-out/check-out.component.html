@@ -1,0 +1,49 @@
+<h1 class="display-4">Shipping</h1><br>
+<div class="row">
+  <div class="col-6">
+    <form #p="ngForm" (ngSubmit)="placeOrder(p.value)">
+      <div class="form-group">
+        <label for="name"><h5>Name</h5></label>
+        <input [(ngModel)]="shipping.name" name="name" #name="ngModel" required class="form-control" id="name">
+        <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
+            Title is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address"><h5>Adress</h5></label>
+        <input [(ngModel)]="shipping.adress" name="adress" required #adress="ngModel" type="adress" class="form-control" id="adress" placeholder="Line 1"><br>
+        <input [(ngModel)]="shipping.adress" name="adress" required #adress="ngModel" type="adress" class="form-control" id="adress" placeholder="Line 1">
+        <div class="alert alert-danger" *ngIf="adress.touched && adress.invalid">
+          Adresss is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="city"><h5>City</h5></label>
+        <input [(ngModel)]="shipping.city" name="city" #city="ngModel" required name="city" class="form-control" id="city">
+        <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
+          City is required
+        </div>
+      </div>
+      <button [disabled]="p.invalid" type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5>Order Summary</h5>
+      </div>
+      <div class="card-body">
+        You have {{totalQty}} items in your shopping Cart.
+        <ul class="list-group list-group-flush">
+          <li  *ngFor="let p of id" class="list-group-item">{{cart.items[p].quantity}} x {{ cart.items[p].product.title }}
+            <div class="float-right">{{(cart.items[p].quantity)*(cart.items[p].product.price) | currency : 'USD'}}</div> 
+          </li>
+          <li class="list-group-item"><b>Total</b>
+          <div class="float-right"><b>{{totalPrice | currency : 'USD'}}</b></div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

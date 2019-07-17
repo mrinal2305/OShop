@@ -1,0 +1,20 @@
+
+<h1 class="display-3">Orders</h1>
+  <br>
+  
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Customer</th>
+      <th scope="col">Date</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody *ngIf="orders">
+    <tr *ngFor="let o of orders">
+      <td>{{o.shipping.name}}</td>
+      <td>{{o.datePlaced | date}}</td>
+       <td><a [routerLink]="['/my/orders',o.id]">View</a> </td> 
+    </tr>
+  </tbody>
+</table> 

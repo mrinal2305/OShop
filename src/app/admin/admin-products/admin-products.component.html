@@ -1,0 +1,66 @@
+<div class="container"> <br>
+   <p>
+                <a routerLink= "/admin/products/new" class="btn btn-primary">New Products</a>
+   </p>
+
+    <input type="text" #f (keyup)="filter(f.value)" class="form-control" placeholder="Search..">
+
+     <data-table
+        [items]="items"
+        [itemCount]="itemCount"
+        (reload)="reloadItems($event)"
+     >
+       <data-table-column
+        [property]="'title'"
+        [header]="'Title'"
+        [sortable]="true"
+        resizable='true'
+        >
+        <ng-template #dataTableCell let-item="item">
+            {{ item.title}}
+        </ng-template>
+       </data-table-column>
+
+        <data-table-column
+           [property]="'title'"
+           [header]="'Price'"
+           [sortable]="true"
+           resizable='true'
+        >
+        <ng-template #dataTableCell let-item="item">
+            {{ item.price | currency:'USD'}}
+        </ng-template>
+        </data-table-column>
+
+        <data-table-column
+           [property]="'id'"
+        >
+        <ng-template #dataTableCell let-item="item">
+            <a [routerLink]="['/admin/products/new',item.id]">Edit</a> 
+        </ng-template>
+        </data-table-column>
+     
+     </data-table>
+
+    <!-- Displaying list of products  -->
+    <br>
+    <!-- <table class="table">
+                    <thead>
+                            <tr class="row">
+                                <th class="col-sm-6">Title</th>
+                                <th class="col-sm-1">Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                <tbody >
+                    <tr *ngFor="let p of filteredProduct" class="row">
+                    <td class="col-sm-6">{{p.title}}</td>
+                    <td class="col-sm-1">{{p.price}}</td>
+                    <td class>
+                        <a [routerLink]="['/admin/products/new',p.id]">Edit</a> 
+                    </td>
+                </tr>
+                </tbody>
+    </table> -->
+             
+</div>

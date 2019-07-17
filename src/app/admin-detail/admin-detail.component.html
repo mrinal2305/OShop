@@ -1,0 +1,73 @@
+
+<h1 class="display-2 text-center">Details</h1> <br>
+
+
+<div class="container">
+  
+  
+    <div class="row" *ngIf="data">
+      <div class="col">
+          <h3 >Date - </h3>
+          _____________________________<br>
+          <i>{{data.datePlaced | date:'medium'}}</i>
+         
+      </div>
+      <div class="col">
+          <h3 >Shipping - </h3>
+          __________________________________<br>
+          <div  *ngFor="let i of productId">
+            <div class="row">
+              <div class="col-4">
+                 <b>Title</b>       -<br>
+                 <b>Price</b>       -<br>
+                 <b>Quantity</b>    -<br>
+                 <b>Total Price</b> -<br>
+              </div>
+              <div class="col-2">
+                -<br>
+                -<br>
+                -<br>
+                -<br>
+              </div>
+              <div class="col">
+                  <i>{{data.product[i].product.title }}</i>,<br>
+                  <i>{{data.product[i].product.price | currency }}</i>,<br>
+                  <i>{{data.product[i].quantity }}</i>,<br>
+                  <i>{{ (data.product[i].product.price)*(data.product[i].quantity) | currency}}</i><br>
+              </div>
+            </div>
+            ----------------------------------------
+          </div>
+          <div class="row">
+            <div class="col-4"><b>Sum Total</b></div>
+            <div class="col-2">-</div>
+             <div class="col"><i>{{totalPrice | currency}}</i></div> 
+          </div>
+      </div>
+      <div class="col">
+          <h3 >Adress - </h3>
+          _____________________________<br>
+          <div class="row">
+            <div class="col-3">
+              <b>Name</b><br>
+              <b>Adress</b><br>
+              <b>City</b>
+            </div>
+            <div class="col-1">
+              -<br>
+              -<br>
+              -<br>
+            </div>
+            <div class="col">
+              <i>{{ data.shipping.name}}</i>,<br>
+              <i>{{ data.shipping.adress }}</i>,<br>
+              <i>{{ data.shipping.city }}</i>,
+              <br>
+              <button class="float-right btn btn-danger" (click)="remove()">Delete</button>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+  
