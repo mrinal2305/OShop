@@ -4,3 +4,12 @@
 nav.navbar{
    background: black;
 }
+
+.badge{
+    margin-left: 4px;
+}
+
+.fa-shopping-cart:before {
+    
+    margin-left: 17px;
+}

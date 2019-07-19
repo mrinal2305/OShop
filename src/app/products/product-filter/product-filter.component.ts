@@ -1,5 +1,5 @@
 import { Component, OnInit,Input} from '@angular/core';
-import { CategoryService } from 'src/app/category.service';
+import { CategoryService } from './../../category.service';
 
 @Component({
   selector: 'app-product-filter',
@@ -8,11 +8,20 @@ import { CategoryService } from 'src/app/category.service';
 })
 export class ProductFilterComponent implements OnInit {
    category$;
-
+   isActive = false;
   @Input ('category') category;
 
   constructor(categoryService : CategoryService) { 
-    this.category$ = categoryService.getCategories();
+    let x = categoryService.getCategories();
+    if(!x) return;
+    else this.category$ = x;
+  }
+
+  toggle(){
+    //  if(this.isActive){
+    //    this.isActive = false;
+    //  }
+     this.isActive = !this.isActive;
   }
 
   ngOnInit() {

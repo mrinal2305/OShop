@@ -1,7 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    
+    "baseUrl" : "/",
+    "paths"     : {
+      "shared/*": [
+        "app/shared/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,6 +23,12 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    
+    // "paths": {
+    //   "shared/*" : [
+    //     "app/shared/*"
+    //   ]
+    // }
   }
 }

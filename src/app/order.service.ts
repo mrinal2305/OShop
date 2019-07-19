@@ -1,10 +1,10 @@
 import { Injectable, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, DatabaseSnapshot } from 'angularFire2/database';
 import { AuthService } from './auth.service';
-import { Order } from './models/order-item';
-import { OrderAll } from './models/orders';
+import { Order } from './shared/models/order-item';
+
 import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'

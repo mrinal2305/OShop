@@ -3,3 +3,40 @@
 @import"font-awesome/css/font-awesome.css"; 
 
 body {padding-top : 80px}
+
+@media only screen and (max-width : 512px){
+    div.sticky-top  {
+       margin-bottom : 9px;
+        width : 368px;
+    }
+    }
+
+    .laptop {
+        top: 80px;
+        display: block;
+    }
+
+    .mobile{
+        display : none;
+    }
+   
+    @media only screen and (max-width : 512px){
+        .mobile{
+            display : block;
+        }
+        .laptop{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width : 390px){
+        .list-group-item-action{
+            width : 96%;
+        }
+    }    
+    @media only screen and (max-width : 512px) and (min-width : 390px){
+        div.sticky-top  {
+           
+            width : 353px;
+        }
+    }

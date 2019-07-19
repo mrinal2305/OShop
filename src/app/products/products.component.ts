@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {  AngularFireDatabase } from 'angularfire2/database';
 import {  ProductService } from './../product.service';
-import { Product } from './../models/product';
+import { Product } from '../shared/models/product';
 import { ActivatedRoute } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 import { ShoppingCartService } from '../shopping-cart.service';
 import { Observable } from 'rxjs';
-import { ShoppingCart } from './../models/shopping-cart';
+import { ShoppingCart } from '../shared/models/shopping-cart';
 
 @Component({
   selector: 'app-products',
@@ -57,7 +57,7 @@ export class ProductsComponent implements OnInit {
     })
     .subscribe(params => {
       this.category = params.get('category'); 
-
+      
       this.filteredProduct = (this.category) ?  // filtering logic
       this.product.filter(p => p.category === this.category) :
       this.product;

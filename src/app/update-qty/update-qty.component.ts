@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../models/product';
+import { Product } from '../shared/models/product';
 import { ShoppingCartService } from '../shopping-cart.service';
 
 @Component({
@@ -24,9 +24,9 @@ export class UpdateQtyComponent implements OnInit {
   
   getQuantity() {
     if(!this.ShoppingCart) return 0;
-  
+    else{
     let item = this.ShoppingCart.items[this.product.id];
-    return item ? item.quantity : 0;
+    return item ? item.quantity : 0;}
   }
 
   removeFromCart(){
