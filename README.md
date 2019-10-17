@@ -1,5 +1,5 @@
 # Shopping-List
-A responsive _Progressive Web App_ for _Online shopping_ of Groceries.
+A _realtime_ responsive _Progressive Web App_ for _Online shopping_ of Groceries.
 ### Details 
 This app is a full-stack website, having full-fledged front and back-end . This is a online shopping app/website where you can buy Grocerries.
 ### Working
