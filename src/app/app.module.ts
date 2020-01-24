@@ -28,6 +28,8 @@ import { UpdateQtyComponent } from './update-qty/update-qty.component';
 import { CheckOutService } from './check-out.service';
 import { DetailsComponent } from './my-orders/details/details.component';
 import { AdminDetailComponent } from './admin-detail/admin-detail.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,8 @@ import { AdminDetailComponent } from './admin-detail/admin-detail.component';
     LazyLoadImageModule,
     FormsModule,
     CustomFormsModule,
-    DataTableModule.forRoot()
+    DataTableModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     AuthService,

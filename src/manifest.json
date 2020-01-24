@@ -1,0 +1,16 @@
+{
+  "name": "Oshop",
+  "short_name": "Oshop",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "src/assets/icons/depositphotos_109841616-stock-illustration-food-delivery-vector-logo-isolated.png",
+      "sizes": "72x72",
+      "type": "image/jpg"
+    }
+  ]
+}
