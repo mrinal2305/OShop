@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LazyLoadImageModule } from 'ng-lazyload-image'; 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AngularFireModule } from 'angularfire2';
 import { environment } from "./../environments/environment";
@@ -45,6 +46,7 @@ import { AdminDetailComponent } from './admin-detail/admin-detail.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    LazyLoadImageModule,
     FormsModule,
     CustomFormsModule,
     DataTableModule.forRoot()
