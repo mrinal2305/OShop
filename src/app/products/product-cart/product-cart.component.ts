@@ -8,7 +8,7 @@ import { Product } from '../../shared/models/product';
   styleUrls: ['./product-cart.component.css']
 })
 export class ProductCartComponent implements OnInit {
-  defaultImage = "http://www.rangerwoodperiyar.com/images/joomlart/demo/default.jpg";
+  defaultImage = "https://firebasestorage.googleapis.com/v0/b/oshop-746be.appspot.com/o/Oshop%2Fdefault.jpg?alt=media&token=9e4f216f-7f5c-4b16-91d4-8bc587c15f17";
   @Input ('product') product : Product;
   @Input ('show-actions') showActions = true;
   @Input ('shoppingCart') ShoppingCart;
