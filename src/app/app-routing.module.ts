@@ -3,17 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './core/components/home/home.component';
 import { ProductsComponent } from './shared/component/products.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { CheckOutComponent } from './check-out/check-out.component';
-import { OrderSuccessComponent } from './order-success/order-success.component';
-import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { ShoppingCartComponent } from '../shopping/components/shopping-cart/shopping-cart.component';
+import { CheckOutComponent } from '../shopping/components/check-out/check-out.component';
+import { OrderSuccessComponent } from '../shopping/components/order-success/order-success.component';
+import { MyOrdersComponent } from '../shopping/components/my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin_/components/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin_/components/admin-orders/admin-orders.component';
 import { LoginComponent } from './core/components/login/login.component';
 import { AuthGuard } from './shared/services/auth-guard.service';
 import { AdminAuthGuardService } from './admin_/services/admin-auth-guard.service';
 import { ProductFormComponent } from './admin_/components/product-form/product-form.component';
-import { DetailsComponent } from './my-orders/details/details.component';
+import { DetailsComponent } from '../shopping/components/my-orders/details/details.component';
 import { AdminDetailComponent } from './admin_/components/admin-detail/admin-detail.component';
 
 const routes: Routes = [

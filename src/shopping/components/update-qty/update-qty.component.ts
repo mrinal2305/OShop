@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../shared/models/product';
-import { ShoppingCartService } from '../shared/services/shopping-cart.service';
+import { Product } from '../../../app/shared/models/product';
+import { ShoppingCartService } from '../../../app/shared/services/shopping-cart.service';
 
 @Component({
   selector: 'app-update-qty',

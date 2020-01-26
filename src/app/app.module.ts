@@ -24,9 +24,9 @@ import { ProductService } from './shared/services/product.service';
 import { DataTableModule } from 'angular5-data-table';
 import { ProductFilterComponent } from './shared/component/product-filter/product-filter.component';
 import { ProductCartComponent } from "./shared/component/product-cart/product-cart.component";
-import { UpdateQtyComponent } from './update-qty/update-qty.component';
+import { UpdateQtyComponent } from '../shopping/components/update-qty/update-qty.component';
 import { CheckOutService } from './shared/services/check-out.service';
-import { DetailsComponent } from './my-orders/details/details.component';
+import { DetailsComponent } from '../shopping/components/my-orders/details/details.component';
 import { AdminDetailComponent } from './admin_/components/admin-detail/admin-detail.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
