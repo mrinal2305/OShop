@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {  AngularFireDatabase } from 'angularfire2/database';
-import {  ProductService } from './../product.service';
-import { Product } from '../shared/models/product';
+import {  ProductService } from '../services/product.service';
+import { Product } from '../models/product';
 import { ActivatedRoute } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
-import { ShoppingCartService } from '../shopping-cart.service';
+import { ShoppingCartService } from '../services/shopping-cart.service';
 import { Observable } from 'rxjs';
-import { ShoppingCart } from '../shared/models/shopping-cart';
+import { ShoppingCart } from '../models/shopping-cart';
 
 @Component({
   selector: 'app-products',

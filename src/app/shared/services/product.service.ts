@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, DatabaseSnapshot } from 'angularfire2/database';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { Product } from './shared/models/product';
+import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'

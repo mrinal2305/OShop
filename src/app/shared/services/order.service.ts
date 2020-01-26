@@ -1,7 +1,7 @@
 import { Injectable, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireAction, DatabaseSnapshot } from 'angularfire2/database';
 import { AuthService } from './auth.service';
-import { Order } from './shared/models/order-item';
+import { Order } from '../models/order-item';
 
 import { map } from 'rxjs/operators';
 

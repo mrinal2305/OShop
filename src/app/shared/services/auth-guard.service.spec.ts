@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { AuthGuardService } from './shared/services/auth-guard.service';
+import { AuthGuardService } from './auth-guard.service';
 
 describe('AuthGuardService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
