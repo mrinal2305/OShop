@@ -1,6 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import"font-awesome/css/font-awesome.css"; 
+$primary-color : #0a8064;
+$secondary-color : #00624b;
+//   Theme 
+.fa-leaf:before {
+    content: "\f06c";
+    color: $secondary-color;
+}   
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+    color: $secondary-color;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-primary  :hover{
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-primary:disabled {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+// ---------------------------
 
 body {padding-top : 80px}
 
