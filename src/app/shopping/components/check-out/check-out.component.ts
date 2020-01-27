@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ShoppingCartService } from '../../../app/shared/services/shopping-cart.service';
-import { ShoppingCart } from '../../../app/shared/models/shopping-cart';
+import { ShoppingCartService } from './../../../shared/services/shopping-cart.service';
+import { ShoppingCart } from './../../../shared/models/shopping-cart';
 import { Subscription } from 'rxjs/Subscription';
-import { CheckOutService } from '../../../app/shared/services/check-out.service';
+import { CheckOutService } from './../../../shared/services/check-out.service';
 import { Router } from '@angular/router';
 
 @Component({
