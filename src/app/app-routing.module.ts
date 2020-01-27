@@ -7,14 +7,14 @@ import { ShoppingCartComponent } from '../shopping/components/shopping-cart/shop
 import { CheckOutComponent } from '../shopping/components/check-out/check-out.component';
 import { OrderSuccessComponent } from '../shopping/components/order-success/order-success.component';
 import { MyOrdersComponent } from '../shopping/components/my-orders/my-orders.component';
-import { AdminProductsComponent } from './admin_/components/admin-products/admin-products.component';
-import { AdminOrdersComponent } from './admin_/components/admin-orders/admin-orders.component';
+import { AdminProductsComponent } from './admin/components/admin-products/admin-products.component';
+import { AdminOrdersComponent } from './admin/components/admin-orders/admin-orders.component';
 import { LoginComponent } from './core/components/login/login.component';
 import { AuthGuard } from './shared/services/auth-guard.service';
-import { AdminAuthGuardService } from './admin_/services/admin-auth-guard.service';
-import { ProductFormComponent } from './admin_/components/product-form/product-form.component';
+import { AdminAuthGuardService } from './admin/services/admin-auth-guard.service';
+import { ProductFormComponent } from './admin/components/product-form/product-form.component';
 import { DetailsComponent } from '../shopping/components/my-orders/details/details.component';
-import { AdminDetailComponent } from './admin_/components/admin-detail/admin-detail.component';
+import { AdminDetailComponent } from './admin/components/admin-detail/admin-detail.component';
 
 const routes: Routes = [
   {path : "",               component : ProductsComponent},

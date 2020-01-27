@@ -18,7 +18,7 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { AuthService } from './shared/services/auth.service';
 import { AuthGuard } from './shared/services/auth-guard.service';
 import { UserService } from './shared/services/user.service';
-import { AdminAuthGuardService } from './admin_/services/admin-auth-guard.service';
+import { AdminAuthGuardService } from './admin/services/admin-auth-guard.service';
 import { CategoryService } from './shared/services/category.service';
 import { ProductService } from './shared/services/product.service';
 import { DataTableModule } from 'angular5-data-table';
@@ -27,7 +27,7 @@ import { ProductCartComponent } from "./shared/component/product-cart/product-ca
 import { UpdateQtyComponent } from '../shopping/components/update-qty/update-qty.component';
 import { CheckOutService } from './shared/services/check-out.service';
 import { DetailsComponent } from '../shopping/components/my-orders/details/details.component';
-import { AdminDetailComponent } from './admin_/components/admin-detail/admin-detail.component';
+import { AdminDetailComponent } from './admin/components/admin-detail/admin-detail.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
